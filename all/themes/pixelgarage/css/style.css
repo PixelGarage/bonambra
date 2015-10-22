@@ -8867,10 +8867,10 @@ form#user-login {
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 150px !important;
+  padding-top: 130px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 150px !important;
+  padding-top: 130px !important;
 }
 @media screen and (min-width: 767px) {
   body.navbar-is-fixed-top {
