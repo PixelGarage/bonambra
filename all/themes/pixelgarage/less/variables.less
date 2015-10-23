@@ -20,7 +20,7 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
-// Kulturfolger colors
+// Bonambra colors
 
 
 
@@ -30,8 +30,10 @@
 
 //** Background color for `<body>`.
 @body-bg:               #fff;
+
 //** Global text color on `<body>`.
 @text-color: darken(#b3c3bd, 20%);
+@text-color-disabled:   @gray;
 @text-color-title: darken(#b3c3bd, 15%);
 @text-color-black: @gray-darker;
 
@@ -189,7 +191,7 @@
 //## Define your custom media queries.
 
 // Media queries
-@narrow:  ~"screen and (min-width: @{screen-xs-max})";
+@narrow:  ~"screen and (min-width: @{screen-xs-min})";
 @tablet:  ~"screen and (min-width: @{screen-sm-min})";
 @normal:  ~"screen and (min-width: @{screen-md-min})";
 @wide:    ~"screen and (min-width: @{screen-lg-min})";

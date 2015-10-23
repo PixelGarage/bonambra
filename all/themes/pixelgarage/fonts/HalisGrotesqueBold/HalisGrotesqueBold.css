@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HalisGrotesqueBold';
+    src: url('fonts/HalisGrotesqueBold.eot');
+    src: url('fonts/HalisGrotesqueBold.eot') format('embedded-opentype'),
+         url('fonts/HalisGrotesqueBold.woff2') format('woff2'),
+         url('fonts/HalisGrotesqueBold.woff') format('woff'),
+         url('fonts/HalisGrotesqueBold.ttf') format('truetype'),
+         url('fonts/HalisGrotesqueBold.svg#HalisGrotesqueBold') format('svg');
+}

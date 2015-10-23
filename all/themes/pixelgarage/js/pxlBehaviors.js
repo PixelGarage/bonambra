@@ -12,11 +12,25 @@
    */
   Drupal.behaviors.addHeaderShadow = {
     attach: function (context) {
+      $(window).off("scroll");
       $(window).on("scroll", function () {
         var $header              = $("header.navbar"),
             $headerCont          = $("header.navbar .container"),
-            fixedHeaderScrollPos = 70,
+            fixedHeaderScrollPos = 116, //30,
             $width               = $(window).width();
+
+        if ($width >= 768) {
+          fixedHeaderScrollPos = 116;//50;
+        }
+        else if ($width >= 640) {
+          fixedHeaderScrollPos = 104;//44;
+        }
+        else if ($width >= 480) {
+          fixedHeaderScrollPos = 84;//37;
+        }
+        else {
+          fixedHeaderScrollPos = 65;//30;
+        }
 
         if ($(window).scrollTop() > fixedHeaderScrollPos) {
           // keep header fixed at this scroll position

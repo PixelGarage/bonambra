@@ -1,4 +1,3 @@
-@import "../css/tinymce.css";
 @import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -1063,7 +1062,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'dinregularalternate', "Helvetica Neue", sans-serif;
+  font-family: 'HalisGrotesqueLight', sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #7a968c;
@@ -5819,7 +5818,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: 'dinregularalternate', "Helvetica Neue", sans-serif;
+  font-family: 'HalisGrotesqueLight', sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.4;
@@ -5926,7 +5925,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'dinregularalternate', "Helvetica Neue", sans-serif;
+  font-family: 'HalisGrotesqueLight', sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -8569,18 +8568,41 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   content: "\f196";
 }
 @font-face {
-  font-family: 'dinregularalternate';
-  src: url('../fonts/dinregularalternate/dinregularalternate.eot');
-  src: url('../fonts/dinregularalternate/dinregularalternate.eot') format('embedded-opentype'), url('../fonts/dinregularalternate/dinregularalternate.woff2') format('woff2'), url('../fonts/dinregularalternate/dinregularalternate.woff') format('woff'), url('../fonts/dinregularalternate/dinregularalternate.ttf') format('truetype'), url('../fonts/dinregularalternate/dinregularalternate.svg#dinregularalternate') format('svg');
+  font-family: 'HalisGrotesqueRegular';
+  src: url('../fonts/HalisGrotesqueRegular/HalisGrotesqueRegular.eot');
+  src: url('../fonts/HalisGrotesqueRegular/HalisGrotesqueRegular.eot') format('embedded-opentype'), url('../fonts/HalisGrotesqueRegular/HalisGrotesqueRegular.woff2') format('woff2'), url('../fonts/HalisGrotesqueRegular/HalisGrotesqueRegular.woff') format('woff'), url('../fonts/HalisGrotesqueRegular/HalisGrotesqueRegular.ttf') format('truetype'), url('../fonts/HalisGrotesqueRegular/HalisGrotesqueRegular.svg#HalisGrotesqueRegular') format('svg');
+}
+@font-face {
+  font-family: 'HalisGrotesqueBold';
+  src: url('../fonts/HalisGrotesqueBold/HalisGrotesqueBold.eot');
+  src: url('../fonts/HalisGrotesqueBold/HalisGrotesqueBold.eot') format('embedded-opentype'), url('../fonts/HalisGrotesqueBold/HalisGrotesqueBold.woff2') format('woff2'), url('../fonts/HalisGrotesqueBold/HalisGrotesqueBold.woff') format('woff'), url('../fonts/HalisGrotesqueBold/HalisGrotesqueBold.ttf') format('truetype'), url('../fonts/HalisGrotesqueBold/HalisGrotesqueBold.svg#HalisGrotesqueBold') format('svg');
+}
+@font-face {
+  font-family: 'HalisGrotesqueLight';
+  src: url('../fonts/HalisGrotesqueLight/HalisGrotesqueLight.eot');
+  src: url('../fonts/HalisGrotesqueLight/HalisGrotesqueLight.eot') format('embedded-opentype'), url('../fonts/HalisGrotesqueLight/HalisGrotesqueLight.woff2') format('woff2'), url('../fonts/HalisGrotesqueLight/HalisGrotesqueLight.woff') format('woff'), url('../fonts/HalisGrotesqueLight/HalisGrotesqueLight.ttf') format('truetype'), url('../fonts/HalisGrotesqueLight/HalisGrotesqueLight.svg#HalisGrotesqueLight') format('svg');
+}
+@font-face {
+  font-family: 'HalisGrotesqueLightItalic';
+  src: url('../fonts/HalisGrotesqueLightItalic/HalisGrotesqueLightItalic.eot');
+  src: url('../fonts/HalisGrotesqueLightItalic/HalisGrotesqueLightItalic.eot') format('embedded-opentype'), url('../fonts/HalisGrotesqueLightItalic/HalisGrotesqueLightItalic.woff2') format('woff2'), url('../fonts/HalisGrotesqueLightItalic/HalisGrotesqueLightItalic.woff') format('woff'), url('../fonts/HalisGrotesqueLightItalic/HalisGrotesqueLightItalic.ttf') format('truetype'), url('../fonts/HalisGrotesqueLightItalic/HalisGrotesqueLightItalic.svg#HalisGrotesqueLightItalic') format('svg');
 }
 /* --------------------------------------------------
  * Pixelgarage Mixins library
+ *
+ * All mixins have to be in the namespace #pxl-mixins to prevent overriding.
  *
  * Usage:
  * .class {
  *     #pxl-mixins.mixin;
  * }
  *
+ * --------------------------------------------------*/
+/*
+ *  General mixins
+ * --------------------------------------------------*/
+/*
+ *  Box modificarion mixins
  * --------------------------------------------------*/
 #pxl-mixins .center-horizontally {
   left: 50%;
@@ -8595,41 +8617,1028 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+/*
+ *  Transformation mixins
+ * --------------------------------------------------*/
+/*
+ *  Text mixins
+ * --------------------------------------------------*/
+/*
+ *  Three part element mixins
+ * --------------------------------------------------*/
+/*
+ *  Bootstrap accordion mixin
+ * --------------------------------------------------*/
 /* --------------------------------------------------
  * Pixelgarage Components
  * --------------------------------------------------*/
 /*
- *  pxlTest component
+ *  Node page component
  * --------------------------------------------------*/
-/* Resize icon to navbar dimensions */
-.navbar-header .logo img {
-  max-height: 32px;
+.node-page div.col-sm-12 {
+  width: 100%;
 }
-/* PxlTest content type */
-.view-pxltest .views-row {
-  border-bottom: 1px solid #eeeeee;
+.node-page div.col-sm-12 .field-name-title h2 {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #7a968c;
 }
-.view-pxltest .views-row .node-pxltest {
-  margin: 50px 0 20px;
+@media screen and (min-width: 480px) {
+  .node-page div.col-sm-12 .field-name-title h2 {
+    font-size: 5vw;
+  }
 }
-/* View mode switcher */
-.switch-view-mode-field > span {
+@media screen and (min-width: 768px) {
+  .node-page div.col-sm-12 .field-name-title h2 {
+    font-size: 30px;
+  }
+}
+.node-page div.col-sm-12 .field-name-body h1,
+.node-page div.col-sm-12 .field-name-body h2,
+.node-page div.col-sm-12 .field-name-body h3,
+.node-page div.col-sm-12 .field-name-body h4,
+.node-page div.col-sm-12 .field-name-body h5,
+.node-page div.col-sm-12 .field-name-body h6 {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+}
+@media screen and (min-width: 480px) {
+  .node-page div.col-sm-12 .field-name-body h1,
+  .node-page div.col-sm-12 .field-name-body h2,
+  .node-page div.col-sm-12 .field-name-body h3,
+  .node-page div.col-sm-12 .field-name-body h4,
+  .node-page div.col-sm-12 .field-name-body h5,
+  .node-page div.col-sm-12 .field-name-body h6 {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page div.col-sm-12 .field-name-body h1,
+  .node-page div.col-sm-12 .field-name-body h2,
+  .node-page div.col-sm-12 .field-name-body h3,
+  .node-page div.col-sm-12 .field-name-body h4,
+  .node-page div.col-sm-12 .field-name-body h5,
+  .node-page div.col-sm-12 .field-name-body h6 {
+    font-size: 17px;
+  }
+}
+.node-page div.col-sm-12 .field-name-body h1,
+.node-page div.col-sm-12 .field-name-body h2,
+.node-page div.col-sm-12 .field-name-body h3 {
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .node-page div.col-sm-12 .field-name-body h1,
+  .node-page div.col-sm-12 .field-name-body h2,
+  .node-page div.col-sm-12 .field-name-body h3 {
+    font-size: 3.33333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page div.col-sm-12 .field-name-body h1,
+  .node-page div.col-sm-12 .field-name-body h2,
+  .node-page div.col-sm-12 .field-name-body h3 {
+    font-size: 20px;
+  }
+}
+.node-page div.col-sm-12 .field-name-body p,
+.node-page div.col-sm-12 .field-name-body tbody td {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 11px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 480px) {
+  .node-page div.col-sm-12 .field-name-body p,
+  .node-page div.col-sm-12 .field-name-body tbody td {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page div.col-sm-12 .field-name-body p,
+  .node-page div.col-sm-12 .field-name-body tbody td {
+    font-size: 15px;
+  }
+}
+.node-page div.col-sm-12 .field-name-body pre,
+.node-page div.col-sm-12 .field-name-body address {
+  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-size: 11px;
+}
+@media screen and (min-width: 480px) {
+  .node-page div.col-sm-12 .field-name-body pre,
+  .node-page div.col-sm-12 .field-name-body address {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page div.col-sm-12 .field-name-body pre,
+  .node-page div.col-sm-12 .field-name-body address {
+    font-size: 15px;
+  }
+}
+.node-page div.col-sm-12 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #7a968c;
+  background: none;
+}
+.node-page div.col-sm-12 .field-name-body img,
+.node-page div.col-sm-12 .field-name-body embed,
+.node-page div.col-sm-12 .field-name-body video,
+.node-page div.col-sm-12 .field-name-body audio,
+.node-page div.col-sm-12 .field-name-body iframe {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  .node-page div.col-sm-12 .field-name-body {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node-page div.col-sm-12 .field-name-body {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+/*
+ *  Node wurfpage component
+ * --------------------------------------------------*/
+.node-wurfpage.view-mode-full div.col-sm-12 {
+  width: 100%;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-title h2 {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-title h2 {
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-title h2 {
+    font-size: 30px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h4,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h5,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h6 {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h4,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h5,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h6 {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h4,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h5,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h6 {
+    font-size: 17px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3 {
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3 {
+    font-size: 3.33333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3 {
+    font-size: 20px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body p,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body tbody td {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 11px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body p,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body tbody td {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body p,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body tbody td {
+    font-size: 15px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body pre,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body address {
+  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-size: 11px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body pre,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body address {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body pre,
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body address {
+    font-size: 15px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #7a968c;
+  background: none;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body img,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body embed,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body video,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body audio,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste {
+  margin-top: 30px;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group {
+  margin: 0;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel {
+  border: none;
+  background: transparent none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading {
+  padding: 0 0 10px;
+  background-color: transparent;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 20px;
+  color: #7a968c;
+  text-decoration: none;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a:hover,
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a.active {
+  text-decoration: none;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a span.fa {
+  margin: 0 10px;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-collapse .panel-body {
+  padding: 0 0 20px;
+  border: none;
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-title h2 {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-title h2 {
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-title h2 {
+    font-size: 30px;
+  }
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h4,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h5,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h6 {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h4,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h5,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h6 {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h4,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h5,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h6 {
+    font-size: 17px;
+  }
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3 {
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3 {
+    font-size: 3.33333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3 {
+    font-size: 20px;
+  }
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body p,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body tbody td {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 11px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body p,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body tbody td {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body p,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body tbody td {
+    font-size: 15px;
+  }
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body pre,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body address {
+  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-size: 11px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body pre,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body address {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body pre,
+  .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body address {
+    font-size: 15px;
+  }
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #7a968c;
+  background: none;
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body img,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body embed,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body video,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body audio,
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*
+ *  Node wurf-week component
+ * --------------------------------------------------*/
+.node-wurf-week div.col-sm-12 {
+  width: 100%;
+}
+.node-wurf-week div.col-sm-12 .field-name-title h2 {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-wurf-week div.col-sm-12 .field-name-title h2 {
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurf-week div.col-sm-12 .field-name-title h2 {
+    font-size: 30px;
+  }
+}
+.node-wurf-week div.col-sm-12 .field-name-body h1,
+.node-wurf-week div.col-sm-12 .field-name-body h2,
+.node-wurf-week div.col-sm-12 .field-name-body h3,
+.node-wurf-week div.col-sm-12 .field-name-body h4,
+.node-wurf-week div.col-sm-12 .field-name-body h5,
+.node-wurf-week div.col-sm-12 .field-name-body h6 {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurf-week div.col-sm-12 .field-name-body h1,
+  .node-wurf-week div.col-sm-12 .field-name-body h2,
+  .node-wurf-week div.col-sm-12 .field-name-body h3,
+  .node-wurf-week div.col-sm-12 .field-name-body h4,
+  .node-wurf-week div.col-sm-12 .field-name-body h5,
+  .node-wurf-week div.col-sm-12 .field-name-body h6 {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurf-week div.col-sm-12 .field-name-body h1,
+  .node-wurf-week div.col-sm-12 .field-name-body h2,
+  .node-wurf-week div.col-sm-12 .field-name-body h3,
+  .node-wurf-week div.col-sm-12 .field-name-body h4,
+  .node-wurf-week div.col-sm-12 .field-name-body h5,
+  .node-wurf-week div.col-sm-12 .field-name-body h6 {
+    font-size: 17px;
+  }
+}
+.node-wurf-week div.col-sm-12 .field-name-body h1,
+.node-wurf-week div.col-sm-12 .field-name-body h2,
+.node-wurf-week div.col-sm-12 .field-name-body h3 {
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurf-week div.col-sm-12 .field-name-body h1,
+  .node-wurf-week div.col-sm-12 .field-name-body h2,
+  .node-wurf-week div.col-sm-12 .field-name-body h3 {
+    font-size: 3.33333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurf-week div.col-sm-12 .field-name-body h1,
+  .node-wurf-week div.col-sm-12 .field-name-body h2,
+  .node-wurf-week div.col-sm-12 .field-name-body h3 {
+    font-size: 20px;
+  }
+}
+.node-wurf-week div.col-sm-12 .field-name-body p,
+.node-wurf-week div.col-sm-12 .field-name-body tbody td {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 11px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 480px) {
+  .node-wurf-week div.col-sm-12 .field-name-body p,
+  .node-wurf-week div.col-sm-12 .field-name-body tbody td {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurf-week div.col-sm-12 .field-name-body p,
+  .node-wurf-week div.col-sm-12 .field-name-body tbody td {
+    font-size: 15px;
+  }
+}
+.node-wurf-week div.col-sm-12 .field-name-body pre,
+.node-wurf-week div.col-sm-12 .field-name-body address {
+  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-size: 11px;
+}
+@media screen and (min-width: 480px) {
+  .node-wurf-week div.col-sm-12 .field-name-body pre,
+  .node-wurf-week div.col-sm-12 .field-name-body address {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurf-week div.col-sm-12 .field-name-body pre,
+  .node-wurf-week div.col-sm-12 .field-name-body address {
+    font-size: 15px;
+  }
+}
+.node-wurf-week div.col-sm-12 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #7a968c;
+  background: none;
+}
+.node-wurf-week div.col-sm-12 .field-name-body img,
+.node-wurf-week div.col-sm-12 .field-name-body embed,
+.node-wurf-week div.col-sm-12 .field-name-body video,
+.node-wurf-week div.col-sm-12 .field-name-body audio,
+.node-wurf-week div.col-sm-12 .field-name-body iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  .node-wurf-week div.col-sm-12 .field-name-body {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node-wurf-week div.col-sm-12 .field-name-body {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+/*
+ *  Node article component
+ * --------------------------------------------------*/
+.node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
+    font-size: 30px;
+  }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
+    font-size: 2.8vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
+    font-size: 17px;
+  }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h3,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h4,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h5,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h6 {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+}
+@media screen and (min-width: 480px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h3,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h4,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h5,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h6 {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h3,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h4,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h5,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h6 {
+    font-size: 17px;
+  }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h3 {
+  font-size: 14px;
+}
+@media screen and (min-width: 480px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h3 {
+    font-size: 3.33333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body h3 {
+    font-size: 20px;
+  }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body p,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body tbody td {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 11px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 480px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body p,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body tbody td {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body p,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body tbody td {
+    font-size: 15px;
+  }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body pre,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body address {
+  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-size: 11px;
+}
+@media screen and (min-width: 480px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body pre,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body address {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body pre,
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-body address {
+    font-size: 15px;
+  }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #7a968c;
+  background: none;
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body img,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body embed,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body video,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body audio,
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*
+ *  Node / block webform component
+ * --------------------------------------------------*/
+.node-page.view-mode-anmeldung div.col-sm-12 {
+  width: 100%;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 .field-name-title {
+  display: none;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component {
+  margin: 0 auto 0.8em;
+  padding: 0;
+  max-width: 100%;
+  background-color: #fff;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label {
+  padding: 0;
+  width: auto;
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5em;
+  text-align: left;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label {
+    font-size: 17px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label span.form-required {
+  color: #7a968c;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component div.description {
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea {
+  padding: 0 10px;
+  height: 100%;
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+  line-height: 1.5em;
+  text-align: left;
+  color: #7a968c;
+  box-shadow: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid transparent;
+  background-color: #eeeeee;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input,
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input,
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea {
+    font-size: 17px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input:focus,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea:focus {
+  border: 1px solid #337ab7;
+  -webkit-box-shadow: 0 0 3px #eeeeee;
+  -moz-box-shadow: 0 0 3px #eeeeee;
+  box-shadow: 0 0 3px #eeeeee;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-textarea-wrapper div.grippie {
+  display: none;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 13px;
+  line-height: 1em;
+  text-align: left;
+  color: #7a968c;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid transparent;
+  background-color: #eeeeee;
+  outline: none;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select {
+    font-size: 17px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select:focus,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select:active {
+  outline: none;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  overflow-x: auto;
+  width: 58.333333%;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file input {
+  position: relative;
+  float: none;
+  padding: 0.3em;
+  width: 80%;
+  text-align: left;
+  border: none;
+  background-color: #eeeeee;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em 1em;
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7a968c;
+  outline: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #eeeeee;
+  margin: 0 1%;
+  vertical-align: baseline;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
+    font-size: 17px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn:hover,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn:focus {
+  color: #eeeeee;
+  background: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file input {
+    width: 60%;
+    font-size: 2.1vw;
+  }
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
+    padding: 0.3em 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file input {
+    width: 68%;
+    font-size: 16px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup {
+  margin-bottom: 25px;
+  padding-top: 15px;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup h2 {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1em;
+  text-align: left;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup h2 {
+    font-size: 2.83333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup h2 {
+    font-size: 17px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup p {
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+  color: #7a968c;
+}
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup p {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup p {
+    font-size: 15px;
+  }
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline {
+  position: relative;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline label,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline input {
+  display: inline-block;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline input.form-text,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline select {
+  position: absolute;
+  right: 0;
+  width: 58.333333%;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions {
+  padding-top: 25px;
+}
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit {
   float: right;
-  padding: 10px 15px;
-  color: #31708f;
-  border-radius: 4px;
-  border: 1px solid #eeeeee;
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em 1em;
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7a968c;
+  outline: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #eeeeee;
 }
-.switch-view-mode-field > span > a {
-  display: block;
-  color: #777777;
+@media screen and (min-width: 480px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit {
+    font-size: 2.83333333vw;
+  }
 }
-.switch-view-mode-field > span > a:hover {
-  text-decoration: underline;
+@media screen and (min-width: 768px) {
+  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit {
+    font-size: 17px;
+  }
 }
-.switch-view-mode-field > span + span {
-  margin-right: 5px;
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit:hover,
+.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit:focus {
+  color: #eeeeee;
+  background: #7a968c;
+}
+/*
+ *  View Aktuelles component
+ * --------------------------------------------------*/
+.view.view-aktuelles .view-content .views-row {
+  margin-bottom: 20px;
+}
+/*
+ *  View Welpen component
+ * --------------------------------------------------*/
+.view.view-welpen .view-content .views-row {
+  margin-bottom: 20px;
 }
 /*
  *  Login form component
@@ -8795,6 +9804,50 @@ form#user-login {
   background-color: #a5b8b1;
 }
 /*
+ *  Language block component
+ * --------------------------------------------------*/
+#block-locale-language {
+  display: inline-block;
+  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-size: 16px;
+}
+#block-locale-language ul.language-switcher-locale-url {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#block-locale-language ul.language-switcher-locale-url > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 0 -0.25em 0 0;
+  padding: 0 10px;
+  line-height: 1;
+  border-right: 1px solid #7a968c;
+}
+#block-locale-language ul.language-switcher-locale-url > li.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+#block-locale-language ul.language-switcher-locale-url > li.last {
+  border-right: none;
+}
+#block-locale-language ul.language-switcher-locale-url > li a.language-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7a968c;
+  outline: none;
+}
+#block-locale-language ul.language-switcher-locale-url > li a.language-link.active,
+#block-locale-language ul.language-switcher-locale-url > li a.language-link:hover {
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  text-decoration: none;
+}
+#block-locale-language ul.language-switcher-locale-url > li span.locale-untranslated {
+  color: #555555;
+}
+/*
  *  ShareThis component
  * --------------------------------------------------*/
 @font-face {
@@ -8816,12 +9869,31 @@ form#user-login {
 }
 .sharethis-wrapper {
   margin: 0;
-  text-align: left;
+  text-align: right;
 }
 .sharethis-wrapper > span .stButton {
   margin: 0;
 }
 .sharethis-wrapper > span .stButton .stLarge {
+  font-family: "SSSocial-Circle";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  color: #ffffff;
+  height: 1.2em;
+  background-image: none !important;
+}
+.sharethis-wrapper > span .stButton .stLarge:hover {
   font-family: "SSSocial-Regular";
   font-style: normal;
   font-weight: normal;
@@ -8835,13 +9907,7 @@ form#user-login {
   -o-font-feature-settings: "liga";
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
-  background-image: none !important;
-  font-size: 2em;
-  color: #888;
-  height: 1.2em;
-}
-.sharethis-wrapper > span .stButton .stLarge:hover {
-  color: #333;
+  opacity: 1.0;
 }
 .sharethis-wrapper > span .stButton .stLarge:before {
   display: inline-block;
@@ -8863,56 +9929,77 @@ form#user-login {
 .st_pinterest_large .stButton .stLarge:before {
   content: "\f650";
 }
+#block-follow-site .follow-links .follow-link-wrapper {
+  margin: 0;
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link {
+  padding: 0 10px;
+  font-family: "SSSocial-Circle";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  color: #777777;
+  background-image: none !important;
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link:hover {
+  font-family: "SSSocial-Regular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link.follow-link-facebook:before {
+  content: "\f610";
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link.follow-link-twitter:before {
+  content: "\f611";
+}
 /*
  *  Header section (navigation)
  * --------------------------------------------------*/
-body.navbar-is-fixed-top {
-  padding-top: 130px !important;
-}
-body.navbar-is-fixed-top.admin-menu {
-  padding-top: 130px !important;
-}
-@media screen and (min-width: 767px) {
-  body.navbar-is-fixed-top {
-    padding-top: 160px !important;
-  }
-  body.navbar-is-fixed-top.admin-menu {
-    padding-top: 160px !important;
-  }
-}
-@media screen and (min-width: 750px) {
-  body.navbar-is-fixed-top {
-    padding-top: 180px !important;
-  }
-  body.navbar-is-fixed-top.admin-menu {
-    padding-top: 180px !important;
-  }
-}
 header#navbar {
   margin-bottom: 0;
   border-bottom: none;
-  background: transparent none;
+  background: #ffffff none;
 }
 header#navbar .container {
-  padding: 0 15px 10px;
+  padding: 0 15px;
 }
 header#navbar .container .navbar-header {
   display: block;
   float: none;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 768px;
 }
 header#navbar .container .navbar-header p.lead {
   margin: 10px auto;
   padding: 0;
   width: 90%;
-  font-family: 'dinregularalternate', "Helvetica Neue", sans-serif;
-  font-size: 3.5vw;
+  font-family: 'HalisGrotesqueRegular', sans-serif;
+  font-size: 3vw;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   header#navbar .container .navbar-header p.lead {
     font-size: 22px;
   }
@@ -8923,8 +10010,8 @@ header#navbar .container .navbar-header a.navbar-brand {
   margin: 0 auto;
   padding: 0;
   height: auto;
-  font-family: 'dinregularalternate', "Arial Black", sans-serif;
-  font-size: 13vw;
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 8.5vw;
   text-align: center;
   text-transform: uppercase;
   color: #222222;
@@ -8932,7 +10019,7 @@ header#navbar .container .navbar-header a.navbar-brand {
   line-height: 1;
   outline: none;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   header#navbar .container .navbar-header a.navbar-brand {
     font-size: 64px;
   }
@@ -8941,8 +10028,8 @@ header#navbar .container .navbar-header .navbar-toggle {
   padding: 5px 10px;
 }
 header#navbar .container .navbar-collapse {
-  margin: 10px auto;
-  max-width: 720px;
+  margin: 10px auto 0;
+  max-width: 738px;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav {
   float: none;
@@ -8969,16 +10056,15 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li {
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
   margin-bottom: 0.15em;
   padding: 0;
-  font-family: 'dinregularalternate', "Arial Black", sans-serif;
-  font-size: 4.7vw;
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 3.7vw;
   text-transform: uppercase;
   text-align: left;
   color: #222222;
   line-height: 1;
   outline: none;
-  border-bottom: 0.15em solid #222222;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
     font-size: 28px;
   }
@@ -8988,30 +10074,118 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
   margin-bottom: 0;
   text-decoration: none;
   outline: none;
-  border: none;
+  color: #566d65;
 }
 /*
  *  Content section (main content)
  * --------------------------------------------------*/
 .container {
   max-width: 960px;
-  background-color: #fff;
 }
-.main-container {
+.container a {
+  outline: none;
+}
+.container a.active,
+.container a:hover,
+.container a:focus {
+  outline: none;
+}
+html {
+  height: 100%;
+}
+body.navbar-is-fixed-top {
+  padding-top: 90px !important;
+}
+body.navbar-is-fixed-top.admin-menu {
+  padding-top: 90px !important;
+}
+@media screen and (min-width: 480px) {
+  body.navbar-is-fixed-top {
+    padding-top: 120px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 120px !important;
+  }
+}
+@media screen and (min-width: 640px) {
+  body.navbar-is-fixed-top {
+    padding-top: 145px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 145px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  body.navbar-is-fixed-top {
+    padding-top: 165px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 165px !important;
+  }
+}
+body {
+  height: 100%;
+}
+body .scroll-container {
+  position: relative;
+  overflow-y: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9) none;
+}
+body .scroll-container .main-container {
   padding-top: 22px;
 }
-.main-container #page-header .region-header h2.block-title {
+body .scroll-container .main-container #page-header .region-header h2.block-title {
   margin: 20px 0 10px;
-  font-family: 'dinregularalternate', "Helvetica Neue", sans-serif;
+  font-family: 'HalisGrotesqueLight', sans-serif;
   font-size: 24px;
+}
+body .scroll-container .main-container .row section h1.page-header {
+  margin: 20px 0 10px;
+  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-size: 41px;
+}
+body .scroll-container .main-container .row section .messages {
+  margin-top: 20px;
+}
+body .scroll-container .main-container .row section ul.nav-tabs {
+  margin: 20px 0 5px;
+}
+body .scroll-container .main-container .row section ul.nav-tabs li {
+  float: right;
+}
+body .scroll-container .main-container .row section ul.nav-tabs li a {
+  padding: 5px 10px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  border-radius: 0;
+}
+body .scroll-container .main-container .row section ul.action-links {
+  margin: 0;
+}
+body .scroll-container .main-container .row section ul.action-links li {
+  float: right;
+}
+body .scroll-container .main-container .row section ul.action-links li a {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px;
+}
+body.front {
+  background: transparent url(../images/background.jpg) no-repeat fixed top left / cover;
+}
+body.front .scroll-container .main-container {
+  position: fixed;
+  top: 60%;
+  left: 20%;
+  width: 40%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.9) none;
 }
 /*
  *  Footer section
  * --------------------------------------------------*/
 footer.footer {
-  margin: 30px auto 0;
-  padding: 25px;
-  background-color: #d5d5d5;
+  display: none;
 }
 footer.footer .node-node-block .field-name-body p {
   color: #222222;

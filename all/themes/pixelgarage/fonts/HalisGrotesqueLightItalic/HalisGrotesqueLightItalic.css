@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HalisGrotesqueLightItalic';
+    src: url('fonts/HalisGrotesqueLightItalic.eot');
+    src: url('fonts/HalisGrotesqueLightItalic.eot') format('embedded-opentype'),
+         url('fonts/HalisGrotesqueLightItalic.woff2') format('woff2'),
+         url('fonts/HalisGrotesqueLightItalic.woff') format('woff'),
+         url('fonts/HalisGrotesqueLightItalic.ttf') format('truetype'),
+         url('fonts/HalisGrotesqueLightItalic.svg#HalisGrotesqueLightItalic') format('svg');
+}

@@ -4,9 +4,8 @@
 
 // Variables
 // -------------------------
-@pxl-navbar-header-width: 750px;
+@pxl-navbar-header-width: 768px;
 
-@header-media:  ~"screen and (min-width: @{pxl-navbar-header-width})";
 
 // Mixins
 // -------------------------
@@ -15,40 +14,13 @@
 
 // Main settings
 // -------------------------
-body.navbar-is-fixed-top {
-  padding-top: 130px !important;
-
-  &.admin-menu {
-    padding-top: 130px !important;
-  }
-
-  @media @narrow {
-    padding-top: 160px !important;
-
-    &.admin-menu {
-      padding-top: 160px !important;
-    }
-  }
-  @media @header-media {
-    padding-top: 180px !important;
-
-    &.admin-menu {
-      padding-top: 180px !important;
-    }
-  }
-}
-
-
 header#navbar {
   margin-bottom: 0;
   border-bottom: none;
-  background: transparent none;
+  background: rgba(255,255,255,1.0) none;
 
   .container {
-    padding: 0 @grid-gutter-width/2 10px;
-
-    .region-navigation {
-    }
+    padding: 0 @grid-gutter-width/2;
 
     .navbar-header {
       display: block;
@@ -62,12 +34,12 @@ header#navbar {
         padding: 0;
         width: 90%;
         font-family: @pxl-text-font-medium;
-        font-size: 3.5vw;
+        font-size: 3vw;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1.2px;
 
-        @media @header-media {
+        @media @tablet {
           font-size: 22px;
         }
       }
@@ -79,8 +51,8 @@ header#navbar {
         margin: 0 auto;
         padding: 0;
         height: auto;
-        font-family: @pxl-text-font-black;
-        font-size: 13vw;
+        font-family: @pxl-text-font-bold;
+        font-size: 8.5vw;
         text-align: center;
         text-transform: uppercase;
         color: @text-color-black;
@@ -88,7 +60,7 @@ header#navbar {
         line-height: 1;
         outline: none;
 
-        @media @header-media {
+        @media @tablet {
           font-size: 64px;
         }
       }
@@ -101,7 +73,7 @@ header#navbar {
 
     // collapse part
     .navbar-collapse {
-      margin: 10px auto;
+      margin: 10px auto 0;
       max-width: @pxl-navbar-header-width - @grid-gutter-width;
 
       nav {
@@ -134,15 +106,14 @@ header#navbar {
               margin-bottom: 0.15em;
               padding: 0;
               font-family: @pxl-text-font-bold;
-              font-size: 4.7vw;
+              font-size: 3.7vw;
               text-transform: uppercase;
               text-align: left;
               color: @text-color-black;
               line-height: 1;
               outline: none;
-              border-bottom: 0.15em solid @text-color-black;
 
-              @media @header-media {
+              @media @tablet {
                 font-size: 28px;
               }
 
@@ -150,7 +121,7 @@ header#navbar {
                 margin-bottom: 0;
                 text-decoration: none;
                 outline: none;
-                border: none;
+                color: @link-hover-color;
               }
             }
           }

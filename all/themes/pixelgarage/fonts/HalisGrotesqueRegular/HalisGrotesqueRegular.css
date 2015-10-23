@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HalisGrotesqueRegular';
+    src: url('fonts/HalisGrotesqueRegular.eot');
+    src: url('fonts/HalisGrotesqueRegular.eot') format('embedded-opentype'),
+         url('fonts/HalisGrotesqueRegular.woff2') format('woff2'),
+         url('fonts/HalisGrotesqueRegular.woff') format('woff'),
+         url('fonts/HalisGrotesqueRegular.ttf') format('truetype'),
+         url('fonts/HalisGrotesqueRegular.svg#HalisGrotesqueRegular') format('svg');
+}
