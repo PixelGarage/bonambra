@@ -4,7 +4,7 @@
 
 // Variables
 // -------------------------
-
+@front-text-color: #fff;
 
 // Mixins
 // -------------------------
@@ -14,7 +14,7 @@
 // General settings
 // -------------------------
 .node-page {
-  div.col-sm-12 {
+  .col-sm-12 {
     width: 100%;
 
     .field-name-title {
@@ -46,5 +46,34 @@
       }
     }
 
+  }
+}
+
+body.front .node-page {
+  .col-sm-12 {
+    .field-name-body {
+      padding: 15% 0;
+      //border: 1px solid @front-text-color;
+      #pxl-mixins.border-radius(50%);
+      background: rgba(255,255,255,0.4) none;
+
+      h2 {
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: @front-text-color;
+        #pxl-mixins.font-size-responsive(36px, 54px);
+      }
+
+      p {
+        margin: 0;
+        font-family: @pxl-text-font;
+        text-align: center;
+        color: @front-text-color;
+        #pxl-mixins.font-size-responsive(12px, 18px);
+      }
+
+      .content-columns(1);
+    }
   }
 }

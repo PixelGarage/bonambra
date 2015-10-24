@@ -5,7 +5,7 @@
 // Variables
 // -------------------------
 @pxl-navbar-header-width: 768px;
-
+@pxl-front-text-color: #fff;
 
 // Mixins
 // -------------------------
@@ -17,10 +17,11 @@
 header#navbar {
   margin-bottom: 0;
   border-bottom: none;
-  background: rgba(255,255,255,1.0) none;
+  background: none;
 
   .container {
     padding: 0 @grid-gutter-width/2;
+    background: rgba(255,255,255,1.0) none;
 
     .navbar-header {
       display: block;
@@ -123,6 +124,15 @@ header#navbar {
                 outline: none;
                 color: @link-hover-color;
               }
+
+              body.front & {
+                color: @pxl-front-text-color;
+                border-bottom: none;
+
+                &:hover, &.active {
+                  border-bottom: 2px solid @pxl-front-text-color;
+                }
+              }
             }
           }
         }
@@ -132,3 +142,25 @@ header#navbar {
   }
 }
 
+body.front {
+  header#navbar {
+    margin-top: 2%;
+    min-height: 34px;
+    //border-top: 1px solid @pxl-front-text-color;
+    //border-bottom: 1px solid @pxl-front-text-color;
+    background: rgba(255,255,255,0.4) none;
+
+    .container {
+      background: none;
+      .navbar-header {
+        p.lead {
+          display: none;
+        }
+
+        a.navbar-brand {
+          display: none;
+        }
+      }
+    }
+  }
+}
