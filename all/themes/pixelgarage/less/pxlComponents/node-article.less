@@ -18,31 +18,28 @@
     div.col-sm-8 {
       .field-name-title {
         h2 {
-          font-family: @pxl-text-font-bold;
-          font-size: @resp-font-size-large-min;
+          font-family: @pxl-title-font;
+          #pxl-mixins.font-size-responsive(16px, 24px);
           letter-spacing: 1.2px;
           text-transform: uppercase;
+          text-align: left;
           color: @text-color;
 
-          @media @narrow {
-            font-size: @resp-font-size-large;
-          }
           @media @tablet {
-            font-size: @resp-font-size-large-max;
+            text-align: right;
           }
         }
       }
 
       .field-name-post-date {
         font-family: @pxl-text-font;
-        font-size: @resp-font-size-min;
+        #pxl-mixins.font-size-responsive(12px, 17px);
+        font-weight: 300;
+        text-align: left;
         color: @text-color;
 
-        @media @narrow {
-          font-size: @resp-font-size;
-        }
         @media @tablet {
-          font-size: @resp-font-size-max;
+          text-align: right;
         }
       }
 
@@ -50,12 +47,13 @@
         #pxl-mixins.wysiwyg-body;
       }
     }
+
     div.col-sm-4 {
-      .field-name-field-images {
-        .fiel-item {
+      .field-name-field-image {
+        .field-item {
           a {
             img {
-
+              margin-top: @line-height-computed;
             }
           }
         }

@@ -1,5 +1,4 @@
-@import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,700italic,300italic|Architects+Daughter);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1062,10 +1061,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #7a968c;
+  color: #222222;
   background-color: #ffffff;
 }
 input,
@@ -1077,12 +1076,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #7a968c;
+  color: #d58136;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #566d65;
+  color: #9e5c21;
   text-decoration: underline;
 }
 a:focus {
@@ -2870,7 +2869,7 @@ select[multiple].form-group-lg .form-control {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #c1cec9;
+  color: #626262;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3284,7 +3283,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #7a968c;
+  color: #d58136;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3306,7 +3305,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #566d65;
+  color: #9e5c21;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3882,7 +3881,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: trasparent;
-  border-color: #7a968c;
+  border-color: #d58136;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4606,7 +4605,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #7a968c;
+  color: #d58136;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4626,7 +4625,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #566d65;
+  color: #9e5c21;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4821,7 +4820,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #7a968c;
+  color: #d58136;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -4892,11 +4891,11 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #7a968c;
+  border-color: #d58136;
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #7a968c;
+  color: #222222;
 }
 .alert {
   padding: 15px;
@@ -5818,7 +5817,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.4;
@@ -5925,7 +5924,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -8610,13 +8609,6 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-#pxl-mixins .center-vertically {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 /*
  *  Transformation mixins
  * --------------------------------------------------*/
@@ -8625,6 +8617,9 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
  * --------------------------------------------------*/
 /*
  *  Three part element mixins
+ * --------------------------------------------------*/
+/*
+ *  Bootstrap accordion mixin
  * --------------------------------------------------*/
 /*
  *  Bootstrap accordion mixin
@@ -8639,11 +8634,11 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   width: 100%;
 }
 .node-page .col-sm-12 .field-name-title h2 {
-  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-family: 'Architects Daughter', cursive;
   font-size: 20px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #7a968c;
+  color: #d58136;
 }
 @media screen and (min-width: 480px) {
   .node-page .col-sm-12 .field-name-title h2 {
@@ -8661,7 +8656,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 .node-page .col-sm-12 .field-name-body h4,
 .node-page .col-sm-12 .field-name-body h5,
 .node-page .col-sm-12 .field-name-body h6 {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 @media screen and (min-width: 480px) {
@@ -8687,6 +8682,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 .node-page .col-sm-12 .field-name-body h1,
 .node-page .col-sm-12 .field-name-body h2,
 .node-page .col-sm-12 .field-name-body h3 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 14px;
 }
 @media screen and (min-width: 480px) {
@@ -8705,7 +8701,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 }
 .node-page .col-sm-12 .field-name-body p,
 .node-page .col-sm-12 .field-name-body tbody td {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -8729,7 +8725,9 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 }
 .node-page .col-sm-12 .field-name-body pre,
 .node-page .col-sm-12 .field-name-body address {
-  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 11px;
 }
 @media screen and (min-width: 480px) {
@@ -8746,7 +8744,7 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
 }
 .node-page .col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #7a968c;
+  border-bottom: 2px solid #222222;
   background: none;
 }
 .node-page .col-sm-12 .field-name-body img,
@@ -8757,6 +8755,9 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.node-page .col-sm-12 .field-name-body .wysiwyg-map {
+  margin: 20px 0;
 }
 @media screen and (min-width: 1024px) {
   .node-page .col-sm-12 .field-name-body {
@@ -8793,24 +8794,25 @@ body.front .node-page .col-sm-12 .field-name-body {
 }
 body.front .node-page .col-sm-12 .field-name-body h2 {
   margin: 0 auto;
+  font-family: 'Architects Daughter', cursive;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 32px;
 }
 @media screen and (min-width: 480px) {
   body.front .node-page .col-sm-12 .field-name-body h2 {
-    font-size: 7.10526316vw;
+    font-size: 6.31578947vw;
   }
 }
 @media screen and (min-width: 768px) {
   body.front .node-page .col-sm-12 .field-name-body h2 {
-    font-size: 54px;
+    font-size: 48px;
   }
 }
 body.front .node-page .col-sm-12 .field-name-body p {
   margin: 0;
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: #ffffff;
   font-size: 12px;
@@ -8832,21 +8834,40 @@ body.front .node-page .col-sm-12 .field-name-body p {
   width: 100%;
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-title h2 {
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #7a968c;
+  color: #222222;
 }
 @media screen and (min-width: 480px) {
   .node-wurfpage.view-mode-full div.col-sm-12 .field-name-title h2 {
-    font-size: 5vw;
+    font-size: 3.15789474vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-wurfpage.view-mode-full div.col-sm-12 .field-name-title h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-field-images .carousel .carousel-inner .item div {
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-field-images .carousel .carousel-inner .item div {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-field-images .carousel .carousel-inner .item div {
+    height: 500px;
+  }
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-field-images .carousel a.carousel-control {
+  background: none;
+}
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body {
+  margin-top: 20px;
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
@@ -8854,7 +8875,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h4,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h5,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h6 {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 @media screen and (min-width: 480px) {
@@ -8880,6 +8901,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h1,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h3 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 14px;
 }
 @media screen and (min-width: 480px) {
@@ -8898,7 +8920,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body p,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body tbody td {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -8922,7 +8944,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body pre,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body address {
-  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 11px;
 }
 @media screen and (min-width: 480px) {
@@ -8939,7 +8963,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #7a968c;
+  border-bottom: 2px solid #222222;
   background: none;
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body img,
@@ -8989,37 +9013,50 @@ body.front .node-page .col-sm-12 .field-name-body p {
   background-color: transparent;
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a {
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 20px;
-  color: #7a968c;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
+  color: #222222;
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a {
+    font-size: 3.15789474vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a {
+    font-size: 24px;
+  }
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a:hover,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a.active {
-  text-decoration: none;
+  color: #d58136;
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-heading .panel-title a span.fa {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste .panel-group .panel .panel-collapse .panel-body {
   padding: 0 0 20px;
   border: none;
 }
+.node-wurfpage.view-mode-teaser .row div.col-sm-4 .field-name-field-images .field-item a img {
+  margin-top: 22px;
+}
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-title h2 {
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #7a968c;
+  color: #222222;
 }
 @media screen and (min-width: 480px) {
   .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-title h2 {
-    font-size: 5vw;
+    font-size: 3.15789474vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-title h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
@@ -9028,7 +9065,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h4,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h5,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h6 {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 @media screen and (min-width: 480px) {
@@ -9054,6 +9091,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h1,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 14px;
 }
 @media screen and (min-width: 480px) {
@@ -9072,7 +9110,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body p,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body tbody td {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -9096,7 +9134,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body pre,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body address {
-  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 11px;
 }
 @media screen and (min-width: 480px) {
@@ -9113,7 +9153,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #7a968c;
+  border-bottom: 2px solid #222222;
   background: none;
 }
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body img,
@@ -9132,20 +9172,20 @@ body.front .node-page .col-sm-12 .field-name-body p {
   width: 100%;
 }
 .node-wurf-week div.col-sm-12 .field-name-title h2 {
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #7a968c;
+  color: #222222;
 }
 @media screen and (min-width: 480px) {
   .node-wurf-week div.col-sm-12 .field-name-title h2 {
-    font-size: 5vw;
+    font-size: 3.15789474vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-wurf-week div.col-sm-12 .field-name-title h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .node-wurf-week div.col-sm-12 .field-name-body h1,
@@ -9154,7 +9194,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-wurf-week div.col-sm-12 .field-name-body h4,
 .node-wurf-week div.col-sm-12 .field-name-body h5,
 .node-wurf-week div.col-sm-12 .field-name-body h6 {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 @media screen and (min-width: 480px) {
@@ -9180,6 +9220,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-wurf-week div.col-sm-12 .field-name-body h1,
 .node-wurf-week div.col-sm-12 .field-name-body h2,
 .node-wurf-week div.col-sm-12 .field-name-body h3 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 14px;
 }
 @media screen and (min-width: 480px) {
@@ -9198,7 +9239,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurf-week div.col-sm-12 .field-name-body p,
 .node-wurf-week div.col-sm-12 .field-name-body tbody td {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -9222,7 +9263,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurf-week div.col-sm-12 .field-name-body pre,
 .node-wurf-week div.col-sm-12 .field-name-body address {
-  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 11px;
 }
 @media screen and (min-width: 480px) {
@@ -9239,7 +9282,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-wurf-week div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #7a968c;
+  border-bottom: 2px solid #222222;
   background: none;
 }
 .node-wurf-week div.col-sm-12 .field-name-body img,
@@ -9271,39 +9314,71 @@ body.front .node-page .col-sm-12 .field-name-body p {
     column-gap: 30px;
   }
 }
+.node-wurf-week div.col-sm-12 .field-name-field-images {
+  margin: 20px 0;
+}
+.node-wurf-week div.col-sm-12 .field-name-field-images .carousel .carousel-inner .item div {
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .node-wurf-week div.col-sm-12 .field-name-field-images .carousel .carousel-inner .item div {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .node-wurf-week div.col-sm-12 .field-name-field-images .carousel .carousel-inner .item div {
+    height: 500px;
+  }
+}
+.node-wurf-week div.col-sm-12 .field-name-field-images .carousel a.carousel-control {
+  background: none;
+}
 /*
  *  Node article component
  * --------------------------------------------------*/
 .node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #7a968c;
+  text-align: left;
+  color: #222222;
 }
 @media screen and (min-width: 480px) {
   .node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
-    font-size: 5vw;
+    font-size: 3.15789474vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
-    font-size: 30px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-title h2 {
+    text-align: right;
   }
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
-  font-family: 'HalisGrotesqueLight', sans-serif;
-  font-size: 13px;
-  color: #7a968c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  color: #222222;
 }
 @media screen and (min-width: 480px) {
   .node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
-    font-size: 2.8vw;
+    font-size: 2.23684211vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
     font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node-article.view-mode-full .row div.col-sm-8 .field-name-post-date {
+    text-align: right;
   }
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
@@ -9312,7 +9387,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h4,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h5,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h6 {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 @media screen and (min-width: 480px) {
@@ -9338,6 +9413,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h1,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h2,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body h3 {
+  font-family: 'Architects Daughter', cursive;
   font-size: 14px;
 }
 @media screen and (min-width: 480px) {
@@ -9356,7 +9432,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body p,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body tbody td {
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -9380,7 +9456,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body pre,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body address {
-  font-family: 'HalisGrotesqueLightItalic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 11px;
 }
 @media screen and (min-width: 480px) {
@@ -9397,7 +9475,7 @@ body.front .node-page .col-sm-12 .field-name-body p {
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #7a968c;
+  border-bottom: 2px solid #222222;
   background: none;
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body img,
@@ -9409,283 +9487,19 @@ body.front .node-page .col-sm-12 .field-name-body p {
   max-width: 100%;
   height: auto;
 }
-/*
- *  Node / block webform component
- * --------------------------------------------------*/
-.node-page.view-mode-anmeldung div.col-sm-12 {
-  width: 100%;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 .field-name-title {
-  display: none;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component {
-  margin: 0 auto 0.8em;
-  padding: 0;
-  max-width: 100%;
-  background-color: #fff;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label {
-  padding: 0;
-  width: auto;
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.5em;
-  text-align: left;
-  color: #7a968c;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label {
-    font-size: 2.23684211vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label {
-    font-size: 17px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component label span.form-required {
-  color: #7a968c;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component div.description {
-  display: block;
-  margin: 10px 0 0;
-  font-family: 'HalisGrotesqueLight', sans-serif;
-  font-size: 13px;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea {
-  padding: 0 10px;
-  height: 100%;
-  font-family: 'HalisGrotesqueLight', sans-serif;
-  font-size: 13px;
-  line-height: 1.5em;
-  text-align: left;
-  color: #7a968c;
-  box-shadow: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 1px solid transparent;
-  background-color: #eeeeee;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input,
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea {
-    font-size: 2.23684211vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input,
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea {
-    font-size: 17px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component input:focus,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component textarea:focus {
-  border: 1px solid #337ab7;
-  -webkit-box-shadow: 0 0 3px #eeeeee;
-  -moz-box-shadow: 0 0 3px #eeeeee;
-  box-shadow: 0 0 3px #eeeeee;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-textarea-wrapper div.grippie {
-  display: none;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select {
-  font-family: 'HalisGrotesqueLight', sans-serif;
-  font-size: 13px;
-  line-height: 1em;
-  text-align: left;
-  color: #7a968c;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 1px solid transparent;
-  background-color: #eeeeee;
-  outline: none;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select {
-    font-size: 2.23684211vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select {
-    font-size: 17px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select:focus,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component select:active {
-  outline: none;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  overflow-x: auto;
-  width: 58.333333%;
-  white-space: nowrap;
-  border: 1px solid transparent;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file input {
-  position: relative;
-  float: none;
-  padding: 0.3em;
-  width: 80%;
-  text-align: left;
-  border: none;
-  background-color: #eeeeee;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
-  display: inline-block;
-  margin: 0;
-  padding: 0.5em 1em;
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 13px;
-  line-height: 1;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #7a968c;
-  outline: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: none;
-  background-color: #eeeeee;
-  margin: 0 1%;
-  vertical-align: baseline;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
-    font-size: 2.23684211vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
-    font-size: 17px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn:hover,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn:focus {
-  color: #eeeeee;
-  background: #7a968c;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file input {
-    width: 60%;
-    font-size: 2.1vw;
-  }
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file button.btn {
-    padding: 0.3em 1em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component .form-managed-file input {
-    width: 68%;
-    font-size: 16px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup {
-  margin-bottom: 25px;
-  padding-top: 15px;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup h2 {
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 1em;
-  text-align: left;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup h2 {
-    font-size: 2.23684211vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup h2 {
-    font-size: 17px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup p {
-  font-family: 'HalisGrotesqueLight', sans-serif;
-  font-size: 12px;
-  line-height: 22px;
-  text-align: left;
-  color: #7a968c;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup p {
-    font-size: 1.97368421vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-component-markup p {
-    font-size: 15px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline {
-  position: relative;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline label,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline input {
-  display: inline-block;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline input.form-text,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form .webform-component.webform-container-inline select {
-  position: absolute;
-  right: 0;
-  width: 58.333333%;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions {
-  padding-top: 25px;
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit {
-  float: right;
-  display: inline-block;
-  margin: 0;
-  padding: 0.5em 1em;
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 13px;
-  line-height: 1;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #7a968c;
-  outline: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: none;
-  background-color: #eeeeee;
-}
-@media screen and (min-width: 480px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit {
-    font-size: 2.23684211vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit {
-    font-size: 17px;
-  }
-}
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit:hover,
-.node-page.view-mode-anmeldung div.col-sm-12 form.webform-client-form div.form-actions button.webform-submit:focus {
-  color: #eeeeee;
-  background: #7a968c;
+.node-article.view-mode-full .row div.col-sm-4 .field-name-field-image .field-item a img {
+  margin-top: 22px;
 }
 /*
  *  View Aktuelles component
  * --------------------------------------------------*/
-.view.view-aktuelles .view-content .views-row {
-  margin-bottom: 20px;
+.view .view-content .views-row {
+  padding: 0 0 30px;
 }
-/*
- *  View Welpen component
- * --------------------------------------------------*/
-.view.view-welpen .view-content .views-row {
-  margin-bottom: 20px;
+@media screen and (min-width: 480px) {
+  .view .view-content .views-row {
+    padding: 0 0 50px;
+  }
 }
 /*
  *  Login form component
@@ -9711,11 +9525,11 @@ body.front .node-page .col-sm-12 .field-name-body p {
   color: #fff;
   border-radius: 0;
   border: none;
-  background-color: #7a968c;
+  background-color: #222222;
 }
 .page-user-login .btn:hover,
 #user-create-account .login-register:hover {
-  background-color: #a5b8b1;
+  background-color: #494949;
 }
 /* User login page */
 form#user-login {
@@ -9776,10 +9590,10 @@ form#user-login {
   color: #fff;
   border-radius: 0;
   border: none;
-  background-color: #7a968c;
+  background-color: #222222;
 }
 #user_login_form .btn:hover {
-  background-color: #a5b8b1;
+  background-color: #494949;
 }
 #user_login_form .login-password {
   display: inline-block;
@@ -9844,18 +9658,18 @@ form#user-login {
   color: #fff;
   border-radius: 0;
   border: none;
-  background-color: #7a968c;
+  background-color: #222222;
 }
 #user-register-form .form-actions .btn:hover,
 #user-pass .form-actions .btn:hover {
-  background-color: #a5b8b1;
+  background-color: #494949;
 }
 /*
  *  Language block component
  * --------------------------------------------------*/
 #block-locale-language {
   display: inline-block;
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 #block-locale-language ul.language-switcher-locale-url {
@@ -9871,7 +9685,7 @@ form#user-login {
   margin: 0 -0.25em 0 0;
   padding: 0 10px;
   line-height: 1;
-  border-right: 1px solid #7a968c;
+  border-right: 1px solid #222222;
 }
 #block-locale-language ul.language-switcher-locale-url > li.first {
   margin-left: 0;
@@ -9883,12 +9697,12 @@ form#user-login {
 #block-locale-language ul.language-switcher-locale-url > li a.language-link {
   text-transform: uppercase;
   text-decoration: none;
-  color: #7a968c;
+  color: #d58136;
   outline: none;
 }
 #block-locale-language ul.language-switcher-locale-url > li a.language-link.active,
 #block-locale-language ul.language-switcher-locale-url > li a.language-link:hover {
-  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 #block-locale-language ul.language-switcher-locale-url > li span.locale-untranslated {
@@ -10041,7 +9855,7 @@ header#navbar .container .navbar-header p.lead {
   margin: 10px auto;
   padding: 0;
   width: 90%;
-  font-family: 'HalisGrotesqueRegular', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 3vw;
   text-align: center;
   text-transform: uppercase;
@@ -10058,7 +9872,7 @@ header#navbar .container .navbar-header a.navbar-brand {
   margin: 0 auto;
   padding: 0;
   height: auto;
-  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-family: 'Architects Daughter', cursive;
   font-size: 8.5vw;
   text-align: center;
   text-transform: uppercase;
@@ -10075,11 +9889,11 @@ header#navbar .container .navbar-header a.navbar-brand {
 header#navbar .container .navbar-header .navbar-toggle {
   padding: 5px 10px;
 }
-header#navbar .container .navbar-collapse {
+header#navbar .container .navbar-header .navbar-collapse {
   margin: 10px auto 0;
   max-width: 738px;
 }
-header#navbar .container .navbar-collapse nav ul.navbar-nav {
+header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav {
   float: none;
   margin: 0;
   padding: 0;
@@ -10087,7 +9901,7 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav {
   text-align: justify;
   line-height: 0;
 }
-header#navbar .container .navbar-collapse nav ul.navbar-nav:after {
+header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav:after {
   content: '';
   position: relative;
   display: inline-block;
@@ -10095,56 +9909,87 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav:after {
   height: 0;
   line-height: 0;
 }
-header#navbar .container .navbar-collapse nav ul.navbar-nav li {
+header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li {
   display: inline-block;
   float: none;
   margin: 0 -2px;
   padding: 0;
 }
-header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
+header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a {
   margin-bottom: 0.15em;
   padding: 0;
-  font-family: 'HalisGrotesqueBold', sans-serif;
-  font-size: 3.7vw;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: left;
   color: #222222;
   line-height: 1;
   outline: none;
 }
-@media screen and (min-width: 768px) {
-  header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
-    font-size: 28px;
+@media screen and (min-width: 480px) {
+  header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a {
+    font-size: 3.55263158vw;
   }
 }
-header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover,
-header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
+@media screen and (min-width: 768px) {
+  header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a {
+    font-size: 27px;
+  }
+}
+header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a:hover,
+header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a.active {
   margin-bottom: 0;
   text-decoration: none;
   outline: none;
-  color: #566d65;
-}
-body.front header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
-  color: #ffffff;
-  border-bottom: none;
-}
-body.front header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover,
-body.front header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
-  border-bottom: 2px solid #ffffff;
+  color: #d58136;
 }
 body.front header#navbar {
   margin-top: 2%;
   min-height: 34px;
-  background: rgba(255, 255, 255, 0.4) none;
 }
 body.front header#navbar .container {
+  width: 100%;
+  max-width: 100%;
   background: none;
+}
+body.front header#navbar .container .navbar-header {
+  margin: 0;
 }
 body.front header#navbar .container .navbar-header p.lead {
   display: none;
 }
 body.front header#navbar .container .navbar-header a.navbar-brand {
   display: none;
+}
+body.front header#navbar .container .navbar-header .navbar-collapse {
+  margin: 0;
+}
+body.front header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li {
+  float: left;
+  margin: 0;
+}
+body.front header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: none;
+}
+@media screen and (min-width: 480px) {
+  body.front header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a {
+    font-size: 2.76315789vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  body.front header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a {
+    font-size: 21px;
+  }
+}
+body.front header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a:hover,
+body.front header#navbar .container .navbar-header .navbar-collapse nav ul.navbar-nav li a.active {
+  background: rgba(255, 255, 255, 0.4) none;
 }
 /*
  *  Content section (main content)
@@ -10179,23 +10024,23 @@ body.navbar-is-fixed-top.admin-menu {
 }
 @media screen and (min-width: 640px) {
   body.navbar-is-fixed-top {
-    padding-top: 145px !important;
+    padding-top: 140px !important;
   }
   body.navbar-is-fixed-top.admin-menu {
-    padding-top: 145px !important;
+    padding-top: 140px !important;
   }
 }
 @media screen and (min-width: 768px) {
   body.navbar-is-fixed-top {
-    padding-top: 165px !important;
+    padding-top: 160px !important;
   }
   body.navbar-is-fixed-top.admin-menu {
-    padding-top: 165px !important;
+    padding-top: 160px !important;
   }
 }
 body {
   height: 100%;
-  background: #f0f0f0 none;
+  background: transparent url(../images/background.jpg) no-repeat fixed top center / cover;
 }
 body .scroll-container {
   position: relative;
@@ -10203,17 +10048,27 @@ body .scroll-container {
   margin: 0 auto;
 }
 body .scroll-container .main-container {
-  padding-top: 22px;
-  background: #ffffff none;
+  padding: 22px 30px 30px;
+  background: rgba(255, 255, 255, 0.9) none;
+}
+@media screen and (min-width: 480px) {
+  body .scroll-container .main-container {
+    padding: 22px 50px 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .scroll-container .main-container {
+    padding: 22px 96px 50px;
+  }
 }
 body .scroll-container .main-container #page-header .region-header h2.block-title {
   margin: 20px 0 10px;
-  font-family: 'HalisGrotesqueLight', sans-serif;
+  font-family: 'Architects Daughter', cursive;
   font-size: 24px;
 }
 body .scroll-container .main-container .row section h1.page-header {
   margin: 20px 0 10px;
-  font-family: 'HalisGrotesqueBold', sans-serif;
+  font-family: 'Architects Daughter', cursive;
   font-size: 41px;
 }
 body .scroll-container .main-container .row section .messages {
@@ -10242,24 +10097,25 @@ body .scroll-container .main-container .row section ul.action-links li a {
   font-size: 12px;
 }
 body.front {
-  background: transparent url(../images/background.jpg) no-repeat fixed top left / cover;
+  background: transparent url(../images/background_front.jpg) no-repeat fixed top center / cover;
 }
 body.front .scroll-container .main-container {
   position: fixed;
-  left: 5%;
+  right: 5%;
   bottom: 5%;
+  padding: 22px 20px;
   width: 90%;
   height: auto;
   background: none;
 }
 @media screen and (min-width: 480px) {
   body.front .scroll-container .main-container {
-    width: 70%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
   body.front .scroll-container .main-container {
-    width: 55%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -10276,8 +10132,40 @@ body.front .scroll-container .main-container {
  *  Footer section
  * --------------------------------------------------*/
 footer.footer {
+  margin: 50px auto 10px;
+  padding: 0;
+  border-color: #fff;
+  background: none;
+}
+body.front footer.footer {
   display: none;
 }
-footer.footer .node-node-block .field-name-body p {
-  color: #222222;
+footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu {
+  text-align: right;
+}
+footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li {
+  display: inline-block;
+}
+footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li a,
+footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li span {
+  padding: 5px 10px;
+  font-size: 10px;
+  color: #fff;
+}
+@media screen and (min-width: 480px) {
+  footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li a,
+  footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li span {
+    font-size: 1.97368421vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li a,
+  footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li span {
+    font-size: 15px;
+  }
+}
+footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li a:hover,
+footer.footer .region-footer #block-menu-menu-copyright-menu ul.menu li a.active {
+  text-decoration: none;
+  color: #d58136;
 }

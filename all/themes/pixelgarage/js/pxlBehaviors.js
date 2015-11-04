@@ -61,7 +61,7 @@
    */
   Drupal.behaviors.manageCarouselControls = {
     attach: function (context) {
-      var $carousels = $('.node-kfartwork .field-name-field-images .carousel');
+      var $carousels = $('.field-name-field-images .carousel');
 
       $carousels.each(function () {
         var $carousel = $(this),
@@ -76,46 +76,22 @@
   };
 
   /**
-   * Scrolls smoothly to the url anchor, when menu is clicked.
+   * Switches accordion indicator (open / close).
    */
-  Drupal.behaviors.smoothScrollingToAnchor = {
+  Drupal.behaviors.accordionIcon = {
     attach: function () {
-      var $header           = $("header.navbar .container"),
-          $anchorMenus      = $('a#menu-contact, a#menu-about, a#menu-submit'),
-          _animatedScrollTo = function (anchor) {
-            var $width       = $(window).width(),
-                headerHeight = 100,
-                offset       = 80;
+      var $toggles = $('.view-wurf-wochen .accordion-toggle');
 
-            if ($width <= 350) {
-              headerHeight = $header.height() - 80
-              offset       = 20;
-            }
-            else if ($width <= 450) {
-              headerHeight = $header.height() - 80;
-              offset       = 30;
-            }
-            else if ($width <= 550) {
-              headerHeight = $header.height() - 90;
-              offset       = 30;
-            }
-            else if ($width <= 650) {
-              headerHeight = $header.height() - 100;
-            }
+      $toggles.once(function() {
+        var $toggle = $(this),
+            $icon = $toggle.find('.fa');
 
-            $('html, body').stop().animate({
-              scrollTop: $(anchor).offset().top - headerHeight - offset
-            }, 600);
-          };
-
-
-      // anchor menu click (same page active)
-      $header.once('click', function () {
-        $anchorMenus.on('click', function () {
-          // animated scrolling to anchor
-          var anchor = "#" + $(this).attr('href').split("#")[1];
-          _animatedScrollTo(anchor);
-          return false;
+        $toggle.on('click', function() {
+          if ($toggle.hasClass('collapsed')) {
+            $icon.removeClass('fa-plus-square-o').addClass('fa-minus-square-o');
+          } else {
+            $icon.removeClass('fa-minus-square-o').addClass('fa-plus-square-o');
+          }
         });
       });
     }

@@ -26,17 +26,17 @@
 
           .panel-title {
             a {
-              font-family: @pxl-text-font-bold;
-              font-size: @font-size-large;
+              font-family: @pxl-title-font;
+              #pxl-mixins.font-size-responsive(16px, 24px);
               color: @text-color;
               text-decoration: none;
 
               &:hover, &.active {
-                text-decoration: none;
+                color: @pxl-color-orange;
               }
 
               span.fa {
-                margin: 0 10px;
+                margin: 0 10px 0 0;
               }
             }
           }

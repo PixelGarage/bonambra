@@ -47,6 +47,7 @@
       .font-size-responsive(@resp-font-size-min, @resp-font-size-max);
     }
     h1, h2, h3 {
+      font-family: @pxl-title-font;
       .font-size-responsive(14px, 20px);
     }
 
@@ -58,6 +59,8 @@
 
     pre, address {
       font-family: @pxl-text-font-light-italics;
+      font-weight: 300;
+      font-style: italic;
       .font-size-responsive(11px, 15px);
     }
 

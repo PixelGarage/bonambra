@@ -19,18 +19,11 @@
 
     .field-name-title {
       h2 {
-        font-family: @pxl-text-font-bold;
-        font-size: @resp-font-size-large-min;
+        font-family: @pxl-title-font;
+        #pxl-mixins.font-size-responsive(16px, 24px);
         letter-spacing: 1.2px;
         text-transform: uppercase;
         color: @text-color;
-
-        @media @narrow {
-          font-size: @resp-font-size-large;
-        }
-        @media @tablet {
-          font-size: @resp-font-size-large-max;
-        }
       }
     }
 
@@ -47,7 +40,8 @@
     }
 
     .field-name-field-images {
-
+      margin: 20px 0;
+      #pxl-mixins.bs-slider();
     }
 
   }

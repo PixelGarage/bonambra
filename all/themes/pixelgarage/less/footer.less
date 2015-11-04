@@ -14,12 +14,33 @@
 // Main settings
 // -------------------------
 footer.footer {
-  display: none;
+  margin: 50px auto 10px;
+  padding: 0;
+  border-color: #fff;
+  background: none;
 
-  .node-node-block {
-    .field-name-body {
-      p {
-        color: @text-color-black;
+  body.front & {
+    display: none;
+  }
+
+  .region-footer {
+    #block-menu-menu-copyright-menu {
+      ul.menu {
+        text-align: right;
+
+        li {
+          display: inline-block;
+
+          a, span {
+            padding: 5px 10px;
+            #pxl-mixins.font-size-responsive(10px, 15px);
+            color: #fff;
+          }
+          a:hover, a.active {
+            text-decoration: none;
+            color: @link-color;
+          }
+        }
       }
     }
   }
