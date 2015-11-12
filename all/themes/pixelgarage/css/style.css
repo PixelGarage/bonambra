@@ -8699,6 +8699,9 @@ div.features-export-list .form-type-checkbox input[type=checkbox] {
     font-size: 20px;
   }
 }
+.node-page .col-sm-12 .field-name-body h2 {
+  margin-top: 0;
+}
 .node-page .col-sm-12 .field-name-body p,
 .node-page .col-sm-12 .field-name-body tbody td {
   font-family: 'Open Sans', sans-serif;
@@ -8918,6 +8921,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
     font-size: 20px;
   }
 }
+.node-wurfpage.view-mode-full div.col-sm-12 .field-name-body h2 {
+  margin-top: 0;
+}
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body p,
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body tbody td {
   font-family: 'Open Sans', sans-serif;
@@ -8974,26 +8980,6 @@ body.front .node-page .col-sm-12 .field-name-body p {
   display: block;
   max-width: 100%;
   height: auto;
-}
-@media screen and (min-width: 1024px) {
-  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .node-wurfpage.view-mode-full div.col-sm-12 .field-name-body {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
 }
 .node-wurfpage.view-mode-full div.col-sm-12 .field-name-wochenliste {
   margin-top: 30px;
@@ -9107,6 +9093,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
   .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h3 {
     font-size: 20px;
   }
+}
+.node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body h2 {
+  margin-top: 0;
 }
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body p,
 .node-wurfpage.view-mode-teaser .row div.col-sm-8 .field-name-body tbody td {
@@ -9237,6 +9226,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
     font-size: 20px;
   }
 }
+.node-wurf-week div.col-sm-12 .field-name-body h2 {
+  margin-top: 0;
+}
 .node-wurf-week div.col-sm-12 .field-name-body p,
 .node-wurf-week div.col-sm-12 .field-name-body tbody td {
   font-family: 'Open Sans', sans-serif;
@@ -9293,26 +9285,6 @@ body.front .node-page .col-sm-12 .field-name-body p {
   display: block;
   max-width: 100%;
   height: auto;
-}
-@media screen and (min-width: 1024px) {
-  .node-wurf-week div.col-sm-12 .field-name-body {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .node-wurf-week div.col-sm-12 .field-name-body {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
 }
 .node-wurf-week div.col-sm-12 .field-name-field-images {
   margin: 20px 0;
@@ -9429,6 +9401,9 @@ body.front .node-page .col-sm-12 .field-name-body p {
   .node-article.view-mode-full .row div.col-sm-8 .field-name-body h3 {
     font-size: 20px;
   }
+}
+.node-article.view-mode-full .row div.col-sm-8 .field-name-body h2 {
+  margin-top: 0;
 }
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body p,
 .node-article.view-mode-full .row div.col-sm-8 .field-name-body tbody td {
